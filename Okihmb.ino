@@ -33,7 +33,7 @@ unsigned int normal[rows_max][cols_max] = {
 // A zero indicates no modifier key at that location.
 unsigned int modifier[rows_max][cols_max] = {
   {0,0,0,0,0,0,0,0},
-  {0,0,0,0,0,0,0,MODIFIERKEY_RIGHT_SHIFT},
+  {MODIFIERKEY_FN,0,0,0,0,0,0,MODIFIERKEY_RIGHT_SHIFT},
   {0,0,0,0,0,0,0,0},
   {0,0,0,0,0,0,0,0},
   {0,0,0,0,0,0,0,0},
@@ -51,7 +51,7 @@ unsigned int modifier[rows_max][cols_max] = {
 // Load the media key matrix with Fn key names at the correct row-column location. 
 // A zero indicates no media key at that location.
 unsigned int media[rows_max][cols_max] = {
-  {0,0,0,0,0,0,0,0},
+  {KEY_SYSTEM_SLEEP,0,0,0,0,0,0,0},
   {0,0,0,0,0,0,0,0},
   {0,0,0,0,0,0,0,0},
   {0,0,0,0,0,0,0,0},
