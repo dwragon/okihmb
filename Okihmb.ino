@@ -1,24 +1,7 @@
-/* Copyright 2018 Frank Adams
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-       http://www.apache.org/licenses/LICENSE-2.0
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
+/* Создано в 2019 году 
+Специально для OKI HMB 1989
+
 */
-// This software implements a Dell Inspiron 1525 Laptop Keyboard Controller using a Teensy LC on 
-// a daughterboard with a 25 pin FPC connector. The keyboard part number is D9K01.
-// This routine uses the Teensyduino "Micro-Manager Method" to send Normal and Modifier 
-// keys over USB. Multi-media keys are sent with keyboard press and release functions.
-// Description of Teensyduino keyboard functions is at www.pjrc.com/teensy/td_keyboard.html
-// 
-// Revision History
-// Initial Release Nov 15, 2018
-// Rev 1 July 16, 2019 - check if slots are full when detecting a key press
-//
 #define MODIFIERKEY_FN 0x8f   // give Fn key a HID code 
 #define CAPS_LED 13 // Teensy LED shows Caps-Lock
 //
